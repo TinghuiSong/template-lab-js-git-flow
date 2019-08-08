@@ -19,6 +19,6 @@ void fizzbuzz( int maxVal){
         }
 }
 int main(){
-	fizzbuzz(100)	
-	return 0;
-}
+	fizzbuzz(100)	;
+  return 0;
+  }
