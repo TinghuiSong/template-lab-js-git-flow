@@ -3,19 +3,25 @@
 using namespace std;
 
 int main(){
-	for (int i = 0; i < 101; ++i){
-		if ( i%4 == 0 && i%6 == 0){
-			cout << "fizzbuzz ";
+	bool fizzbool = true;
+	for (int i = 0; i < 100; ++i){
+		fizzbool = true;
+		if (i % 4 == 0){
+			cout << "fizz";
+			fizzbool = false;
 		}
-		else if ( i%4 == 0 ){
-			cout << "fizz ";
+		if(i % 6 == 0){
+			cout << "buzz";
+			fizzbool = false;
 		}
-		else if ( i%6 == 0 ){
-			cout << "buzz ";
+		if(i % 5 == 0){
+			cout << "bool";
+			fizzbool = false;
 		}
-		else{
-			cout << i << " ";
+		if(fizzbool){
+			cout<< i;
 		}
+		cout << endl;
 	}
 	return 0;
 }
