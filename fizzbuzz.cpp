@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int main(){
+void fizzbuzz (int maxVal){
 	bool fizzbool = true;
 	for (int i = 0; i < 100; ++i){
 		fizzbool = true;
@@ -23,5 +23,9 @@ int main(){
 		}
 		cout << endl;
 	}
-	return 0;
 }
+
+int main(){
+	fizzbuzz(100)	;
+  return 0;
+  }
